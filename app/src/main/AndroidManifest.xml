@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <queries>
+        <package android:name="com.android.chrome" />
+    </queries>
+
+    <application
+        android:name=".spalsh.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Diamonds"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".spalsh.A1_SplashActivity"
+            android:exported="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".spalsh.SkinToneDetailsActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"  />
+
+        <activity
+            android:name=".spalsh.BodyFilterActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.A7_ExitActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.AddImageActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.BaseActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.BodyPartActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.BodyPartDetailActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.SelectBodyTypActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.CountryActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.ExploreBodyPartActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.HomeActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.Intro1Activity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.SkinToneActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.HumanSpeciesActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".spalsh.GenderActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.BodyInfoActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.BodyScanerActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.CameraScannerActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.XrayCameraActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".spalsh.AgeActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
