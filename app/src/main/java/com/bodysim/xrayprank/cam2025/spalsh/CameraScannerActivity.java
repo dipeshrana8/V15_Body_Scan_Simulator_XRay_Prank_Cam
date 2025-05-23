@@ -15,9 +15,9 @@ public class CameraScannerActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityExploreBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        binding.txtDescription.setText("Body Camera Scanner");
+        binding.imgTool.setImageResource(R.drawable.img_bodscan_d_tool);
         binding.imgChange.setImageResource(R.drawable.img_camera_scanner);
-
+        binding.btnNext.setImageResource(R.drawable.img_keep_going);
         binding.btnNext.setOnClickListener(v -> {
 
             Intent intent = new Intent(CameraScannerActivity.this, XrayCameraActivity.class);

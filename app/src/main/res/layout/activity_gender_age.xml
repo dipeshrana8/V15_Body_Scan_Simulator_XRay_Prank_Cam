@@ -14,12 +14,12 @@
         android:visibility="gone" />
 
     <ImageView
+        android:id="@+id/imgTool"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_30sdp"
-        android:layout_marginVertical="@dimen/_15sdp"
         android:adjustViewBounds="true"
-        android:src="@drawable/img_header_gender" />
+        android:src="@drawable/img_gender_tool" />
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -33,6 +33,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_header_gender" />
 
             <FrameLayout
                 android:id="@+id/frameNative"
@@ -43,110 +50,42 @@
                 android:layout_marginVertical="@dimen/_5sdp"
                 android:minHeight="@dimen/_180sdp" />
 
-
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:weightSum="2">
-
-                <LinearLayout
-                    android:id="@+id/btnFemale"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_150sdp"
-                    android:layout_marginEnd="@dimen/_5sdp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_country_select"
-
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/txtFemale"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="@dimen/_10sdp"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:text="Female"
-                        android:textColor="#000000" />
-
-                    <ImageView
-                        android:id="@+id/imFemale"
-                        android:layout_width="@dimen/_100sdp"
-                        android:layout_height="@dimen/_100sdp"
-                        android:src="@drawable/img_female" />
-
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:id="@+id/btnMale"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_150sdp"
-                    android:layout_marginStart="@dimen/_5sdp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_country_unselect"
-                    android:gravity="center"
-
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/txtMale"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="@dimen/_10sdp"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:text="Male"
-
-                        android:textColor="#000000" />
-
-                    <ImageView
-                        android:id="@+id/imgMale"
-                        android:layout_width="@dimen/_100sdp"
-                        android:layout_height="@dimen/_100sdp"
-                        android:src="@drawable/img_male" />
-
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/btnOthers"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_60sdp"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                android:layout_marginVertical="@dimen/_10sdp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_country_unselect"
-                android:gravity="start"
-                android:orientation="horizontal">
+                android:layout_marginHorizontal="@dimen/_10sdp">
 
                 <ImageView
-                    android:id="@+id/imgOthers"
-                    android:layout_width="@dimen/_50sdp"
-                    android:layout_height="@dimen/_50sdp"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_marginHorizontal="@dimen/_10sdp"
-                    android:src="@drawable/img_other_gender" />
-
-                <TextView
-                    android:id="@+id/txtOthers"
-
-                    android:layout_width="wrap_content"
+                    android:id="@+id/btnChange"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_gravity="bottom"
                     android:layout_marginVertical="@dimen/_10sdp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="Other"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/img_male_select"
+                    android:visibility="visible" />
 
-                    android:textColor="#000000" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
+                    <View
+                        android:id="@+id/btnMale"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
 
-            </LinearLayout>
+                    <View
+                        android:id="@+id/btnFemale"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </FrameLayout>
+
 
         </LinearLayout>
 

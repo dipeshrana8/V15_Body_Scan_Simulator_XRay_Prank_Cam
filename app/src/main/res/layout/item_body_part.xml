@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/itemContainer"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/_5sdp"
-    android:background="@drawable/bg_country_unselect"
     android:gravity="center"
-    android:orientation="vertical"
-    android:padding="@dimen/_5sdp">
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/imgIcon"
-        android:layout_width="@dimen/_45sdp"
-        android:layout_height="@dimen/_45sdp"
-        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:src="@drawable/ear" />
 
@@ -25,5 +22,6 @@
         android:fontFamily="@font/poppins_medium"
         android:text="Hair"
         android:textColor="@android:color/black"
-        android:textSize="@dimen/_12ssp" />
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone" />
 </LinearLayout>

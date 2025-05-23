@@ -26,6 +26,8 @@ public class BodyPartDetailActivity extends BaseActivity {
         binding.imgBodyPart.setImageResource(image);
         binding.txtDescription.setText(description);
         binding.txtTitle.setText(title);
+        binding.txtTitle1.setText(title);
+
 
     }
 

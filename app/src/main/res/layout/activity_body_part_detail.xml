@@ -13,6 +13,31 @@
         layout="@layout/toolbar_layout"
         android:visibility="gone" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgTool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_empty_tool" />
+
+        <TextView
+            android:id="@+id/txtTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center_horizontal"
+
+            android:text="Ear"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp" />
+    </FrameLayout>
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -51,11 +76,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/_10sdp"
-                android:fontFamily="@font/poppins_semibold"
+                android:fontFamily="@font/rubik_bold"
                 android:justificationMode="inter_word"
                 android:text="Eye"
 
-                android:textColor="@color/black"
+                android:textColor="@color/colorprimary"
                 android:textSize="@dimen/_18ssp" />
 
             <TextView

@@ -16,9 +16,9 @@ public class XrayCameraActivity extends BaseActivity {
         binding = ActivityExploreBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.txtDescription.setText("Body Xray Camera");
+        binding.imgTool.setImageResource(R.drawable.img_xray_tool);
         binding.imgChange.setImageResource(R.drawable.img_xray_camera);
-
+        binding.btnNext.setImageResource(R.drawable.img_go_ahead);
 
         binding.btnNext.setOnClickListener(v -> {
 

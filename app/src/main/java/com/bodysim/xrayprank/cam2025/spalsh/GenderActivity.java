@@ -26,36 +26,10 @@ public class GenderActivity extends BaseActivity {
 
         binding.btnConfirm.setOnClickListener(v -> {
 
+            Intent intent = new Intent(GenderActivity.this, AgeActivity.class);
+            startActivity(intent);
 
-            SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
-            String name = sharedPreferences.getString("category", "");
 
-
-            if (name.equals("btnFullBodyScan")) {
-
-                Intent intent = new Intent(GenderActivity.this, AgeActivity.class);
-                startActivity(intent);
-            } else if (name.equals("btnOldBody")) {
-
-                Intent intent = new Intent(GenderActivity.this, AgeActivity.class);
-                startActivity(intent);
-            } else if (name.equals("btnBodyPartName")) {
-
-                Intent intent = new Intent(GenderActivity.this, ExploreBodyPartActivity.class);
-                startActivity(intent);
-            } else if (name.equals("btnBodyFilter")) {
-
-                Intent intent = new Intent(GenderActivity.this, AgeActivity.class);
-                startActivity(intent);
-            } else if (name.equals("btnHumanSpecies")) {
-
-                Intent intent = new Intent(GenderActivity.this, HumanSpeciesActivity.class);
-                startActivity(intent);
-            } else if (name.equals("btnOpenGallery")) {
-
-                Intent intent = new Intent(GenderActivity.this, AddImageActivity.class);
-                startActivity(intent);
-            }
         });
     }
 
@@ -64,22 +38,14 @@ public class GenderActivity extends BaseActivity {
 
 
         binding.btnMale.setOnClickListener(v -> {
-            binding.btnMale.setBackgroundResource(R.drawable.bg_country_select);
-            binding.btnFemale.setBackgroundResource(R.drawable.bg_country_unselect);
-            binding.btnOthers.setBackgroundResource(R.drawable.bg_country_unselect);
+            binding.btnChange.setImageResource(R.drawable.img_male_select);
         });
 
         binding.btnFemale.setOnClickListener(v -> {
-            binding.btnFemale.setBackgroundResource(R.drawable.bg_country_select);
-            binding.btnMale.setBackgroundResource(R.drawable.bg_country_unselect);
-            binding.btnOthers.setBackgroundResource(R.drawable.bg_country_unselect);
-        });
-        binding.btnOthers.setOnClickListener(v -> {
-            binding.btnOthers.setBackgroundResource(R.drawable.bg_country_select);
-            binding.btnMale.setBackgroundResource(R.drawable.bg_country_unselect);
-            binding.btnFemale.setBackgroundResource(R.drawable.bg_country_unselect);
+            binding.btnChange.setImageResource(R.drawable.img_female_selected);
 
         });
+
     }
 
 

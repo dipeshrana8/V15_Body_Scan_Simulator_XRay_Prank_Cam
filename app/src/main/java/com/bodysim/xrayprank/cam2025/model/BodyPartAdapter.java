@@ -1,13 +1,15 @@
 package com.bodysim.xrayprank.cam2025.model;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bodysim.xrayprank.cam2025.R;
 import com.bodysim.xrayprank.cam2025.databinding.ItemBodyPartBinding;
+import com.bodysim.xrayprank.cam2025.spalsh.BodyPartDetailActivity;
 
 import java.util.List;
 
@@ -16,8 +18,11 @@ public class BodyPartAdapter extends RecyclerView.Adapter<BodyPartAdapter.ViewHo
     private final List<BodyPartModel> list;
     private int selectedPosition = -1;
 
-    public BodyPartAdapter(List<BodyPartModel> list) {
+    Context context;
+
+    public BodyPartAdapter(List<BodyPartModel> list, Context context) {
         this.list = list;
+        this.context = context;
     }
 
     public BodyPartModel getSelectedItem() {
@@ -36,13 +41,15 @@ public class BodyPartAdapter extends RecyclerView.Adapter<BodyPartAdapter.ViewHo
         BodyPartModel model = list.get(position);
         holder.binding.imgIcon.setImageResource(model.getImageResId());
         holder.binding.txtName.setText(model.getTitle());
-        holder.binding.itemContainer.setBackgroundResource(
-                selectedPosition == position ? R.drawable.bg_country_select : R.drawable.bg_country_unselect
-        );
+
 
         holder.itemView.setOnClickListener(v -> {
             selectedPosition = position;
-            notifyDataSetChanged();
+            Intent intent = new Intent(context, BodyPartDetailActivity.class);
+            intent.putExtra("title", model.getTitle());
+            intent.putExtra("image", model.getImageResId());
+            intent.putExtra("description", model.getDescription());
+            context.startActivity(intent);
         });
     }
 

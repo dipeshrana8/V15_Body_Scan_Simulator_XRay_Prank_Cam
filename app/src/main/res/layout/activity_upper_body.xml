@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg1"
+    android:orientation="vertical"
+    tools:context=".spalsh.SelectUpperActivity">
+
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/toolbar_layout"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgTool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_body_type_tool" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgChange"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_gravity="bottom"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/img_upper_body"
+                    android:visibility="visible" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/btnChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/img_upper_selected"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <View
+                            android:id="@+id/btnUpper"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <View
+                            android:id="@+id/btnLower"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/frameNative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/_5sdp"
+
+                android:minHeight="@dimen/_180sdp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_x_ray_scanner" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_scanning_now" />
+</LinearLayout>

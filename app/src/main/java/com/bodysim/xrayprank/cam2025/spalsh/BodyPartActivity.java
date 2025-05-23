@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -36,11 +37,16 @@ public class BodyPartActivity extends BaseActivity {
         showSettings = true;
         binding.toolbarLayout.headerTitle.setText("Select Body Part");
         binding.toolbarLayout.btnBack.setOnClickListener(v -> onBackPressed());
+        binding.imgHeader.setImageResource(R.drawable.img_body_info_header);
+        binding.imgTool.setImageResource(R.drawable.img_infobody_tool);
+        binding.btnNext.setImageResource(R.drawable.img_start);
         setupLanguageList();
+
+
         LanguageAdapter adapter = new LanguageAdapter(languageList);
         binding.toolbarLayout.btnBack.setVisibility(GONE);
 
-        binding.languageRecyclerView.setLayoutManager(new GridLayoutManager(this, 1));
+        binding.languageRecyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         binding.languageRecyclerView.setAdapter(adapter);
 
 
@@ -94,16 +100,16 @@ public class BodyPartActivity extends BaseActivity {
             LanguageModel model = languageList.get(position);
             holder.binding.languageName.setText(model.getLanguageName());
             holder.binding.languageFlag.setImageResource(model.getFlagResId());
-
+            holder.binding.languageName.setSelected(true);
             if (model.isSelected()) {
-                holder.binding.getRoot().setBackgroundResource(R.drawable.bg_country_select);
-                holder.binding.imgSelect.setImageResource(R.drawable.ic_selected);
-
+                holder.binding.getRoot().setBackgroundResource(R.drawable.bg_country_select1);
+                holder.binding.languageBg.setImageResource(R.drawable.img_info_select);
+                holder.binding.languageName.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.white));
 
             } else {
-                holder.binding.getRoot().setBackgroundResource(R.drawable.bg_country_unselect);
-                holder.binding.imgSelect.setImageResource(R.drawable.ic_unselected);
-
+                holder.binding.getRoot().setBackgroundResource(R.drawable.bg_country_unselect1);
+                holder.binding.languageBg.setImageResource(R.drawable.img_info_unselect);
+                holder.binding.languageName.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.black));
 
             }
 

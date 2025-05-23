@@ -8,11 +8,11 @@ import android.os.Handler;
 import android.os.Looper;
 import android.view.animation.DecelerateInterpolator;
 
+import com.bodysim.xrayprank.cam2025.databinding.ActivitySplashBinding;
+import com.bodysim.xrayprank.cam2025.myAds.AdsPreference;
 import com.onesignal.Continue;
 import com.onesignal.OneSignal;
 import com.onesignal.debug.LogLevel;
-import com.bodysim.xrayprank.cam2025.databinding.ActivitySplashBinding;
-import com.bodysim.xrayprank.cam2025.myAds.AdsPreference;
 
 
 public class A1_SplashActivity extends BaseActivity {

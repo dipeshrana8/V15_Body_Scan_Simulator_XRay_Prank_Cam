@@ -14,12 +14,12 @@
         android:visibility="gone" />
 
     <ImageView
+        android:id="@+id/imgTool"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_30sdp"
-        android:layout_marginVertical="@dimen/_15sdp"
         android:adjustViewBounds="true"
-        android:src="@drawable/img_heade_body_part" />
+        android:src="@drawable/img_body_part_tool" />
+
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -60,6 +60,7 @@
         android:layout_marginHorizontal="@dimen/_10sdp"
         android:layout_marginVertical="@dimen/_10sdp"
         android:adjustViewBounds="true"
-        android:src="@drawable/img_next" />
+        android:src="@drawable/img_next"
+        android:visibility="gone" />
 
 </LinearLayout>

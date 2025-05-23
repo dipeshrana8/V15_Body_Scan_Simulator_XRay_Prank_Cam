@@ -3,12 +3,12 @@ package com.bodysim.xrayprank.cam2025.spalsh
 import android.content.SharedPreferences
 import android.util.Log
 import androidx.appcompat.app.AppCompatDelegate
-import com.google.firebase.FirebaseApp
-import com.google.firebase.remoteconfig.FirebaseRemoteConfig
-import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
 import com.bodysim.xrayprank.cam2025.R
 import com.bodysim.xrayprank.cam2025.myAds.AdsPreference
 import com.bodysim.xrayprank.cam2025.myAds.MyController
+import com.google.firebase.FirebaseApp
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig
+import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject

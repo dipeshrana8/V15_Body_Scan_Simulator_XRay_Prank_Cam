@@ -29,12 +29,16 @@ public class AddImageActivity extends BaseActivity {
 
         if (name.equals("Body Scanner")) {
             binding.toolbarLayout.headerTitle.setText("Add Image");
+            binding.imgTool.setImageResource(R.drawable.img_add_image_tool);
         } else if (name.equals("btnOldBody")) {
             binding.toolbarLayout.headerTitle.setText("Your Old Body");
+            binding.imgTool.setImageResource(R.drawable.img_old_tool);
         } else if (name.equals("btnOpenGallery")) {
             binding.toolbarLayout.headerTitle.setText("Body Scanner");
+            binding.imgTool.setImageResource(R.drawable.img_gallary_tool);
         } else if (name.equals("btnBodyFilter")) {
             binding.toolbarLayout.headerTitle.setText("Body Filter");
+            binding.imgTool.setImageResource(R.drawable.img_body_filter_tool);
         }
 
         binding.btnNextToGo.setOnClickListener(v -> {

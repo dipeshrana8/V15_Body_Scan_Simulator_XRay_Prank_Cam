@@ -40,7 +40,7 @@ public class BodyFilterActivity extends BaseActivity {
             if (selectedIndex == -1) {
                 Toast.makeText(this, "Please select a skin tone", Toast.LENGTH_SHORT).show();
             } else {
-                Intent intent = new Intent(BodyFilterActivity.this, SelectBodyTypActivity.class);
+                Intent intent = new Intent(BodyFilterActivity.this, SelectUpperActivity.class);
                 intent.putExtra("selected_skin_index", selectedIndex);
                 intent.putExtra("selected_skin_name", selectedSkinTone);
                 startActivity(intent);

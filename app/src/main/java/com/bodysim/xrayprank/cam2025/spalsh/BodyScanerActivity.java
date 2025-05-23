@@ -15,10 +15,10 @@ public class BodyScanerActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityExploreBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        binding.txtDescription.setText("Body 3D Scanner");
+        binding.imgTool.setImageResource(R.drawable.img_bodscan_tool);
 
         binding.imgChange.setImageResource(R.drawable.img_body_back);
-
+        binding.btnNext.setImageResource(R.drawable.img_keep_going);
         binding.btnNext.setOnClickListener(v -> {
 
             Intent intent = new Intent(BodyScanerActivity.this, CameraScannerActivity.class);

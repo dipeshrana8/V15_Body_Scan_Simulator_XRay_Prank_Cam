@@ -16,8 +16,8 @@ import androidx.browser.customtabs.CustomTabColorSchemeParams;
 import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.core.content.ContextCompat;
 
-import com.bumptech.glide.Glide;
 import com.bodysim.xrayprank.cam2025.R;
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -48,7 +48,7 @@ public class WebNativeAds {
             };
             actionButton.setOnClickListener(redirectListener);
             adContainer.setOnClickListener(redirectListener);
-
+            frameLayout.removeAllViews();
             frameLayout.addView(adView);
         } else {
             frameLayout.setVisibility(View.GONE);

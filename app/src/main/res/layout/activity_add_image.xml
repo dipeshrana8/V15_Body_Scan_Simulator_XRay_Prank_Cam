@@ -15,12 +15,11 @@
         android:visibility="gone" />
 
     <ImageView
+        android:id="@+id/imgTool"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_30sdp"
-        android:layout_marginVertical="@dimen/_15sdp"
         android:adjustViewBounds="true"
-        android:src="@drawable/img_upload_img_txt" />
+        android:src="@drawable/img_add_image_tool" />
 
 
     <ScrollView

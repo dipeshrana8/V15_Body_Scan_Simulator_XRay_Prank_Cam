@@ -8,19 +8,12 @@
     android:orientation="vertical"
     tools:context=".spalsh.Intro1Activity">
 
-    <TextView
-        android:id="@+id/txtDescription"
+    <ImageView
+        android:id="@+id/imgTool"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginVertical="@dimen/_10sdp"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center_horizontal"
-        android:justificationMode="inter_word"
-        android:text="Terms &amp; Conditions"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_15ssp"
-        android:visibility="invisible" />
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_bodscan_tool" />
 
     <ScrollView
         android:layout_width="match_parent"

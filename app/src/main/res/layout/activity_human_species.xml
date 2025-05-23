@@ -14,12 +14,12 @@
         android:visibility="gone" />
 
     <ImageView
+        android:id="@+id/imgTool"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_30sdp"
-        android:layout_marginVertical="@dimen/_15sdp"
         android:adjustViewBounds="true"
-        android:src="@drawable/img_header_human" />
+        android:src="@drawable/img_human_tool" />
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -32,6 +32,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_header_human" />
 
             <FrameLayout
                 android:id="@+id/frameNative"

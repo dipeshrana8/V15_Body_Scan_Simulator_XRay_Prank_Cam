@@ -14,12 +14,11 @@
         android:visibility="gone" />
 
     <ImageView
+        android:id="@+id/imgTool"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_30sdp"
-        android:layout_marginVertical="@dimen/_15sdp"
         android:adjustViewBounds="true"
-        android:src="@drawable/img_header_skin_tone" />
+        android:src="@drawable/img_body_skin_tool" />
 
 
     <ScrollView
@@ -31,17 +30,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
-
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_marginHorizontal="@dimen/_50sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/img_skin_tone_totle" />
+                android:src="@drawable/img_header_skin_tone" />
 
             <FrameLayout
                 android:id="@+id/frameNative"
@@ -50,276 +48,24 @@
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="@dimen/_10sdp"
                 android:layout_marginVertical="@dimen/_5sdp"
-                android:minHeight="@dimen/_180sdp"
-                android:visibility="visible" />
 
-            <LinearLayout
-                android:id="@+id/btnFair"
+                android:minHeight="@dimen/_180sdp" />
+
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_65sdp"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                android:layout_marginVertical="@dimen/_5sdp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_country_select"
-                android:gravity="start"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imgOthers"
-                    android:layout_width="@dimen/_50sdp"
-                    android:layout_height="@dimen/_50sdp"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_marginHorizontal="@dimen/_10sdp"
-                    android:src="@drawable/img_fair" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start|center_vertical"
-                    android:gravity="start"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/txtOthers"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start|center_vertical"
-                        android:fontFamily="@font/poppins_semibold"
-
-                        android:text="Fair Skin"
-
-                        android:textColor="#000000" />
-
-                    <TextView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start|center_vertical"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:text="Bright and light a soft, porcelain-like glow that
-needs a little extra sun care."
-                        android:textColor="#747474"
-                        android:textSize="@dimen/_7ssp" />
-                </LinearLayout>
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_skin_tone_select" />
 
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/btnOlive"
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_65sdp"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                android:layout_marginVertical="@dimen/_5sdp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_country_unselect"
-                android:gravity="start"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imgOlive"
-                    android:layout_width="@dimen/_50sdp"
-                    android:layout_height="@dimen/_50sdp"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_marginHorizontal="@dimen/_10sdp"
-                    android:src="@drawable/img_olive" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start|center_vertical"
-                    android:gravity="start"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/txtOlive"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start|center_vertical"
-                        android:fontFamily="@font/poppins_semibold"
-
-                        android:text="Olive Skin"
-
-                        android:textColor="#000000" />
-
-                    <TextView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start|center_vertical"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:text="A natural, balanced tone with green or neutral
-undertones."
-                        android:textColor="#747474"
-                        android:textSize="@dimen/_7ssp" />
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/btnLight"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_65sdp"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                android:layout_marginVertical="@dimen/_5sdp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_country_unselect"
-                android:gravity="start"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imgLight"
-                    android:layout_width="@dimen/_50sdp"
-                    android:layout_height="@dimen/_50sdp"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_marginHorizontal="@dimen/_10sdp"
-                    android:src="@drawable/img_light" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start|center_vertical"
-                    android:gravity="start"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/txtLight"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start|center_vertical"
-                        android:fontFamily="@font/poppins_semibold"
-
-                        android:text="Light Skin"
-
-                        android:textColor="#000000" />
-
-                    <TextView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start|center_vertical"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:text="Delicate and radiant a gentle glow with soft
-undertones."
-                        android:textColor="#747474"
-                        android:textSize="@dimen/_7ssp" />
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/btnBrown"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_65sdp"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                android:layout_marginVertical="@dimen/_5sdp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_country_unselect"
-                android:gravity="start"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imgBrown"
-                    android:layout_width="@dimen/_50sdp"
-                    android:layout_height="@dimen/_50sdp"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_marginHorizontal="@dimen/_10sdp"
-                    android:src="@drawable/img_brown" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start|center_vertical"
-                    android:gravity="start"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/txtBrown"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start|center_vertical"
-                        android:fontFamily="@font/poppins_semibold"
-
-                        android:text="Brown Skin"
-
-                        android:textColor="#000000" />
-
-                    <TextView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start|center_vertical"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:text="Bold, beautiful, and glowing a rich tone full
-of warmth and strength."
-                        android:textColor="#747474"
-                        android:textSize="@dimen/_7ssp" />
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/btnBlack"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_65sdp"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                android:layout_marginVertical="@dimen/_5sdp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_country_unselect"
-                android:gravity="start"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imgBlack"
-                    android:layout_width="@dimen/_50sdp"
-                    android:layout_height="@dimen/_50sdp"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_marginHorizontal="@dimen/_10sdp"
-                    android:src="@drawable/img_black" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start|center_vertical"
-                    android:gravity="start"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/txtBlack"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start|center_vertical"
-                        android:fontFamily="@font/poppins_semibold"
-
-                        android:text="Black Skin"
-
-                        android:textColor="#000000" />
-
-                    <TextView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="start|center_vertical"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:text="Strong, smooth, and stunning a deep glow that
-shines with confidence."
-                        android:textColor="#747474"
-                        android:textSize="@dimen/_7ssp" />
-                </LinearLayout>
-
-
-            </LinearLayout>
-
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_skin_tone_txt" />
         </LinearLayout>
-
 
     </ScrollView>
 
